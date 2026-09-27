@@ -1,0 +1,128 @@
+/* =========================================================
+   1. HTML TAG SELECTORS
+   ========================================================= */
+
+/* Set page background color, default typography, and margins */
+body {
+    background-color: #fdf6e3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Align and style primary headings */
+h1 {
+    color: #8b0000;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+h2 {
+    color: #d9531e;
+    border-bottom: 2px solid #d9531e;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+/* Style navigation links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #8b0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   2. CUSTOM CLASS SELECTORS
+   ========================================================= */
+
+/* Reusable header container styling */
+.site-header {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ffe0b2;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #555555;
+}
+
+/* Reusable card layout for sections */
+.card-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Reusable footer styling */
+.site-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* =========================================================
+   3. UNIQUE ID SELECTORS
+   ========================================================= */
+
+#main-header {
+    border-top: 5px solid #8b0000;
+}
+
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#ofrenda-info {
+    border-left: 5px solid #d9531e;
+}
+
+/* =========================================================
+   4. FLEXBOX LAYOUT
+   ========================================================= */
+
+/* Flex container to display content side by side with gap spacing */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual flex items scale equally */
+.flex-item {
+    flex: 1;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
