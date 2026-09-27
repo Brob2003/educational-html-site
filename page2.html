@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Día de los Muertos - Traditions & Ofrendas</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
-    <!-- Header containing title and navigation bar -->
-    <header>
+    <header id="page2-header" class="site-header">
         <h1>Día de los Muertos: Traditions & Ofrendas</h1>
-        <p>Discovering the elements, offerings, and festive practices of the celebration.</p>
+        <p class="subtitle">Discovering the elements, offerings, and festive practices of the celebration.</p>
         
-        <!-- Navigation bar linking back to index.html -->
         <nav>
             <ul>
                 <li><a href="index.html">Home & History</a></li>
@@ -21,51 +20,40 @@
         </nav>
     </header>
 
-    <!-- Main landmark containing unique content for page 2 -->
     <main>
 
-        <section>
+        <section id="ofrenda-info" class="card-section">
             <h2>The Anatomy of an Ofrenda</h2>
             <p>
-                An <em>ofrenda</em> (home altar) is not built for worship, but rather as a welcoming station 
-                to invite returning spirits back to the earthly realm. Altars are decorated with photographs of 
-                deceased family members, personal mementos, and specific symbolic elements.
-            </p>
-            <p>
-                Each item placed on an ofrenda represents one of the four core elements of nature: 
-                earth, wind, water, and fire.
+                An <em>ofrenda</em> (home altar) is built to invite returning spirits back to the earthly realm. 
+                Altars are decorated with photographs, personal mementos, and symbolic offerings representing earth, wind, water, and fire.
             </p>
         </section>
 
-        <section>
-            <h2>Essential Altar Offerings</h2>
-            <p>Common items placed on traditional altars include:</p>
-            
-            <!-- Unordered list (<ul>) displaying bulleted items -->
-            <ul>
-                <li><strong>Cempasúchil (Marigolds):</strong> Vibrant orange flowers whose bright color and fragrance guide spirits home.</li>
-                <li><strong>Pan de Muerto:</strong> A sweet, spiced bread baked with dough shapes resembling bones and skulls.</li>
-                <li><strong>Papel Picado:</strong> Delicately cut tissue paper banners representing wind and the fragility of life.</li>
-                <li><strong>Calaveras de Azúcar:</strong> Decorative sugar skulls inscribed with the names of the departed.</li>
-                <li><strong>Water and Salt:</strong> Water quenches the spirits' thirst after their long journey, while salt purifies them.</li>
-            </ul>
-        </section>
+        <!-- Flexbox Container side-by-side layout for offerings & image -->
+        <div class="flex-container">
+            <section class="flex-item card-section">
+                <h2>Essential Altar Offerings</h2>
+                <ul>
+                    <li><strong>Cempasúchil (Marigolds):</strong> Vibrant orange flowers guiding spirits home.</li>
+                    <li><strong>Pan de Muerto:</strong> A sweet, spiced bread baked with dough shapes.</li>
+                    <li><strong>Papel Picado:</strong> Delicately cut tissue paper banners representing wind.</li>
+                    <li><strong>Calaveras de Azúcar:</strong> Decorative sugar skulls with names of the departed.</li>
+                    <li><strong>Water and Salt:</strong> Purifying element and quenching thirst.</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Community Traditions</h2>
-            <p>An altar decorated with marigold flowers and traditional offerings during the festival:</p>
-            
-            <!-- Image tag with relative path, alt text, and width attribute -->
-            <img src="images/ofrenda.jpg" alt="Traditional Ofrenda decorated with bright yellow marigolds and candles" width="400">
-        </section>
+            <section class="flex-item card-section">
+                <h2>Community Traditions</h2>
+                <img src="images/ofrenda.jpg" alt="Traditional Ofrenda decorated with bright yellow marigolds" width="300">
+            </section>
+        </div>
 
     </main>
 
-    <!-- Footer with secondary navigation link -->
-    <footer>
+    <footer id="page2-footer" class="site-footer">
         <hr>
-        <p>Educational Website Project | Built with semantic HTML</p>
-        <!-- Internal relative link returning to the homepage -->
+        <p>Educational Website Project | Built with semantic HTML & CSS</p>
         <p><a href="index.html">&larr; Return to Home & History</a></p>
     </footer>
 

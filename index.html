@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8"> <!-- For accents etc -->
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Día de los Muertos - History & Roots</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
-    <!-- The <header> tag represents introductory content or a set of navigational links -->
-    <header>
+    <header id="main-header" class="site-header">
         <h1>Día de los Muertos: History & Cultural Roots</h1>
-        <p>Exploring the ancient origins and modern celebration of the Day of the Dead.</p>
+        <p class="subtitle">Exploring the ancient origins and modern celebration of the Day of the Dead.</p>
         
-        <!-- The <nav> tag defines a section of navigation links connecting website pages -->
         <nav>
             <ul>
                 <li><a href="index.html">Home & History</a></li>
@@ -21,57 +20,41 @@
         </nav>
     </header>
 
-    <!-- The <main> tag holds the central, unique content of the webpage -->
-    <main>
+    <main id="main-content">
 
-        <!-- The <section> tag groups related content into thematic units -->
-        <section>
+        <section id="history-section" class="card-section">
             <h2>Ancient Origins and Blending of Cultures</h2>
-            
-            <!-- Paragraph tags (<p>) contain blocks of standard descriptive text -->
             <p>
-                Día de los Muertos, or Day of the Dead, is a deeply meaningful holiday traditionally observed 
-                on November 1st and 2nd. Rather than a solemn occasion of mourning, it is a joyful celebration 
-                that honors and remembers deceased loved ones, welcoming their spirits back for a brief reunion.
+                Día de los Muertos, or Day of the Dead, is a deeply meaningful holiday celebrated primarily 
+                on November 1st and 2nd. Rather than a solemn occasion of mourning, it is a joyful remembrance 
+                that honors and remembers deceased loved ones, welcoming their spirits back home.
             </p>
-            
             <p>
-                The roots of the holiday trace back thousands of years to indigenous Mesoamerican traditions, 
-                including those of the Aztec, Maya, and Nahua people. Following Spanish colonization in the 
-                16th century, these ancestral rituals blended with Catholic traditions surrounding All Saints' 
-                Day and All Souls' Day, creating the unique celebration observed today.
+                The roots of the holiday date back thousands of years to Indigenous Mesoamerican civilizations, 
+                including the Aztecs, Maya, and Nahua. Following Spanish colonization, these ancestral practices 
+                blended with Catholic traditions surrounding All Saints' Day and All Souls' Day.
             </p>
         </section>
 
-        <section>
-            <h2>Historical Timeline</h2>
-            <p>Key historical milestones that shaped the evolution of the holiday over time:</p>
+        <!-- Flexbox Container to display sections side by side -->
+        <div class="flex-container">
+            <section class="flex-item card-section">
+                <h3>Cultural Significance</h3>
+                <p>It is a vibrant celebration of memory, unity, and respect for generations past.</p>
+            </section>
             
-            <!-- An ordered list (<ol>) creates a numbered sequence of items -->
-            <ol>
-                <li><strong>Pre-Columbian Era:</strong> Aztec month-long festivals dedicated to Mictecacihuatl, the Lady of the Dead.</li>
-                <li><strong>16th Century:</strong> Spanish contact fuses indigenous rituals with Christian calendar dates.</li>
-                <li><strong>Early 20th Century:</strong> Satirist José Guadalupe Posada creates "La Calavera Catrina," an iconic symbol of the holiday.</li>
-                <li><strong>2008:</strong> UNESCO inscribes Día de los Muertos on the Representative List of the Intangible Cultural Heritage of Humanity.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Visualizing the Celebration</h2>
-            <p>A look at traditional decorative art and symbolic skulls used during the festivities:</p>
-            
-            <!-- The <img> tag embeds an image using a relative path, alt text for accessibility, and a width attribute -->
-            <img src="images/calavera.jpg" alt="Vibrant hand-painted sugar skull or decorative Calavera" width="400">
-        </section>
+            <section class="flex-item card-section">
+                <h3>Visual Traditions</h3>
+                <p>Bright colors, marigold flowers, and sugar skulls decorate homes and cemeteries.</p>
+                <img src="images/calavera.jpg" alt="Decorated Sugar Skull (Calavera)" width="250">
+            </section>
+        </div>
 
     </main>
 
-    <!-- The <footer> tag contains metadata, copyright info, or secondary page links -->
-    <footer>
+    <footer id="main-footer" class="site-footer">
         <hr>
-        <p>Educational Website Project | Built with semantic HTML</p>
-        <!-- Internal link connecting to the second page of the website -->
-        <p>Continue reading: <a href="page2.html">Learn about Traditions & Ofrendas &rarr;</a></p>
+        <p>Educational Website Project | Built with semantic HTML & CSS</p>
     </footer>
 
 </body>
