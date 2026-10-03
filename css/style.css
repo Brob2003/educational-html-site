@@ -126,3 +126,32 @@ nav ul li a:hover {
         flex-direction: column;
     }
 }
+/* Add to style.css */
+.skull-img {
+  width: 250px;
+  max-width: 100%; /* Keeps image responsive on mobile screens */
+  height: auto;
+}
+/* Existing styles above... */
+
+/* Mobile / Small Screen Styles */
+@media screen and (max-width: 768px) {
+  /* Stack Flexbox navigation or content columns vertically */
+  nav, 
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust padding and font size for small displays */
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Ensure images shrink smoothly on small screens */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
